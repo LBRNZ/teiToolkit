@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "teiToolkit", "teiToolkit.pyproj", "{B42FA6BF-30C7-4BFC-9E2D-ED74925F92F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B42FA6BF-30C7-4BFC-9E2D-ED74925F92F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42FA6BF-30C7-4BFC-9E2D-ED74925F92F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {256A3A46-157E-4FDC-8E6F-92E16CFE20D5}
+	EndGlobalSection
+EndGlobal
