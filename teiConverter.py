@@ -17,7 +17,7 @@ def convertFileToTEI(filePath):
     }
 
     response = requests.post(
-        'https://oxgarage2.tei-c.org/ege-webservice/Conversions/docx%3Aapplication%3Avnd.openxmlformats-officedocument.wordprocessingml.document/TEI%3Atext%3Axml',
+        'https://oxgarage2.tei-c.org/ege-webservice/Conversions/docx:application:vnd.openxmlformats-officedocument.wordprocessingml.document/TEI:text:xml',
         params=params,
         headers=headers,
         files=files,
