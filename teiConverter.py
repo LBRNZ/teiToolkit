@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import requests
 
@@ -33,6 +34,7 @@ def iterateFiles(directory):
             convertFileToTEI(f)
             
 def __init__(self):
+    print("Dieses Skript lädt alle Dateien im angegebenen Ordner auf oxgarage hoch und konvertiert sie von .docx nach .tei")
     inputInfo = "Bitte geben sie den Ordnerpfad an >>>>> "
     self.directory = input(inputInfo)
     if os.path.isdir(self.directory):

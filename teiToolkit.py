@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 import teiConverter
 import teiCleaner
 class teiToolkit(object):
 
     def __init__(self):
-        inputInfo = "Welche Funktion soll aufgerufen werden? \n\n 1) tei Konverter. \n\n 2) tei Cleaner. \n\n Bitte Zahl eingeben und Enter druecken >>>>> "
+        inputInfo = "Welche Funktion soll aufgerufen werden? \n\n 1) tei Konverter. \n\n 2) tei Cleaner. \n\n Bitte Zahl eingeben und Enter drücken >>>>> "
         self.the_route = input(inputInfo)
 
         if self.the_route == '1':
