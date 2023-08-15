@@ -1,7 +1,5 @@
 import os
 import requests
-# directory with files to convert to tei
-directory = r'C:\Users\Marc\Documents\30 GIT\teiToolkit\inputData'
 
 def convertFileToTEI(filePath):
     headers = {
@@ -26,9 +24,19 @@ def convertFileToTEI(filePath):
     file.write(response.content)
     file.close()
 
-# iterate over files in that directory
-for filename in os.listdir(directory):
-    f = os.path.join(directory, filename)
-    # checking if it is a file and start conversion
-    if os.path.isfile(f):
-        convertFileToTEI(f)
+def iterateFiles(directory):
+    # iterate over files in that directory
+    for filename in os.listdir(directory):
+        f = os.path.join(directory, filename)
+        # checking if it is a file and start conversion
+        if os.path.isfile(f):
+            convertFileToTEI(f)
+            
+def __init__(self):
+    inputInfo = "Bitte geben sie den Ordnerpfad an >>>>> "
+    self.directory = input(inputInfo)
+    if os.path.isdir(self.directory):
+       iterateFiles(self.directory)
+    else:
+       print("Ordner existiert nicht")
+    
